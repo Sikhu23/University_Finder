@@ -1,0 +1,8 @@
+.frontclass{
+  height: 90vh;
+  border: 1px solid black;
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let colg of colglist">
+      <div class="card" style="width: 18rem; margin-top: 10px; height: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{colg.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted"><span *ngIf='colg["state-province"]'>{{colg["state-province"]}} ,</span> {{colg.country}}</h6>
+
+          <a [href]="colg.web_pages[0]" class="card-link" target="_blank">Visit Site</a>
+
+        </div>
+      </div>
+    </div>
+
+</div>
